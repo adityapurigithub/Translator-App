@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	background: skyblue;
+}
+.container{
+	width: 60%;
+	height: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+.wrapper{
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.input{
+	display: flex;
+	border-bottom: 1px solid grey;
+	width: 100%;
+}
+.input textarea{
+	height: 250px;
+	width: 100%;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	background: none;
+	padding: 10px 15px;
+	resize: none;
+}
+textarea.to-text{
+	border-radius: 0;
+	border-left: 1px solid grey;
+	cursor: not-allowed;
+} 
+.controls,li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+li .icons{
+	padding:10px 20px;
+}
+
+.controls{
+	list-style: none;
+	outline: none;
+	border: none;
+}
+.controls .icons{
+	border-right:1px solid grey ;
+}
+.controls .icons i{
+	/*width: 70px;*/
+	color: #9f9f9f;
+	font-size: 15px;
+	opacity: 0.8;
+	padding:0px 10px;
+	cursor: pointer;
+}
+.controls .row select{
+	margin: 0 15px;
+	outline: none;
+	border: none;
+}
+.controls .row select:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+.controls .exchange{
+	color: #9f9f9f;
+	cursor: pointer;
+}
+.container button{
+	background: blueviolet;
+	width: 100%;
+	padding: 10px;
+	margin-top:10px ;
+	border-radius:5px ;
+	outline: none;
+	border: none;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+}
+@media screen and (max-width: 768px){
+	.container{
+		/*width: 80%;*/
+		min-height: 65vh;
+		display: flex;
+		flex-direction:column ;
+		justify-content: center;
+		align-items: center;
+	}
+	.wrapper{
+		height: 90%;
+	}
+	.input{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 90%;
+	}
+	.input textarea{
+		text-align: center;
+		width: inherit;
+
+		padding: 10px 0;
+		border: none;
+	}
+	.input textarea.from-text{
+		border-radius: 0;
+		border-bottom: 1px solid grey;
+	}
+	.controls .exchange{
+		display: none;
+		margin: 0;
+	}
+	.controls .icons{
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+	.controls .icons i{
+		font-size: 10px;
+	}
+	.controls .icons .fa-copy{
+		display: none;
+	}
+	
+	.controls{
+		margin: 10px 5px ;
+	}
+	.controls .row select{
+		margin: 0;
+		font-size: 12px;
+		width: 60%;
+	}
+	li{
+		margin: 2px;
+		justify-content: space-around;
+	}
+
+
+.click{
+	cursor: zoom-in;
+}
+}
